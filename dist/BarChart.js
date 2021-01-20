@@ -46,7 +46,7 @@ var BarChart = /** @class */ (function (_super) {
                     barWidth / 2} y={((barHeight > 0 ? baseHeight - barHeight : baseHeight) / 4) * 3 +
                         paddingTop} rx={barRadius} width={barWidth} height={(Math.abs(barHeight) / 4) * 3} 
                         /* fill="url(#fillShadowGradient)" */
-                        fill={(_this.props.activeBarIndex !== null) ? ((i === _this.props.activeBarIndex) ? _this.props.activeBarColor : _this.props.inactiveBarColor) : "url(#fillShadowGradient)"}
+                        fill={(_this.props.activeBarIndex !== null && _this.props.activeBarIndex !== undefined) ? ((i === _this.props.activeBarIndex) ? _this.props.activeBarColor : _this.props.inactiveBarColor) : "url(#fillShadowGradient)"}
                         />);
             });
         };

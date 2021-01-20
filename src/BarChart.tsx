@@ -82,7 +82,7 @@ class BarChart extends AbstractChart<BarChartProps, BarChartState> {
           width={barWidth}
           height={(Math.abs(barHeight) / 4) * 3}
           // fill=“url(#fillShadowGradient)”
-          fill={(this.props.activeBarIndex !== null) ? ((i === this.props.activeBarIndex) ? this.props.activeBarColor : this.props.inactiveBarColor) : "url(#fillShadowGradient)"}
+          fill={(this.props.activeBarIndex !== null && this.props.activeBarIndex !== undefined) ? ((i === this.props.activeBarIndex) ? this.props.activeBarColor : this.props.inactiveBarColor) : "url(#fillShadowGradient)"}
         />
       );
     });
