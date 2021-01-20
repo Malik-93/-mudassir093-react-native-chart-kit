@@ -1,7 +1,7 @@
 {
   "name": "@mudassir093/react-native-chart-kit",
-  "version": "1.0.2",
-  "description": "This package forked from react-native-chart-kit and onPress eventadded in barchart",
+  "version": "1.0.4",
+  "description": "This package forked from react-native-chart-kit and onPress event added in barchart",
   "_main": "./node_modules/expo/AppEntry.js",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -15,8 +15,7 @@
     "ios": "expo start --ios",
     "test": "jest",
     "build": "tsc",
-    "dev": "tsc --watch",
-    "prepublish": "yarn build"
+    "dev": "tsc --watch"
   },
   "jest": {
     "preset": "jest-expo"
